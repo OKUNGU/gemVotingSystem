@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gem Admin Login</title>
+    <link rel="stylesheet" href="adminLogin.css" type="text/css">
+    <style>
+        #container {
+            position: relative;
+            width: 300px;
+            height: 500px;
+            margin-left: 500px;
+            margin-top: 100px;
+            background-color: lightgrey;
+            box-sizing: border-box;
+            box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.6);
+            border-radius: 4px;
+            justify-content: center;
+            display: inline-block;
+        }
+        
+        #login-txt {
+            margin-left: 82px;
+            font-size: 25px;
+            font-family: Georgia;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <!--    LOGIN FORM   -->
+        <span id="login-txt">Admin Login</span>
+        <form class="login-inputs" action="adminValidater.php" method="post">
+            <input id="login1" type="text" placeholder="Username" minlength="3" maxlength="50" name="username" required><br>
+            <input id="login2" type="password" placeholder="Password" minlength="3" maxlength="50" name="password" required><br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button class="btn" type="submit">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
